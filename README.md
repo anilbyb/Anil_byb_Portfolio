@@ -12,4 +12,4 @@ Each folder contains a focused project or group of related contributions. More t
 
 ---
 
-👋 For questions, collaborations, or feedback, feel free to reach out via [LinkedIn](https://www.linkedin.com/in/anilbayburtluoglu) or email.
+👋 For questions, collaborations, or feedback, feel free to reach out via [LinkedIn](https://www.linkedin.com/in/anilbayburt) or email: anilbayburt@gmail.com
