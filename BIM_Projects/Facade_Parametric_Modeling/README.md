@@ -27,9 +27,9 @@ The algorithm works by **selecting a surface** from the base facade model. It th
 
 ## 📁 Included Files
 
-- `renderings/`: Rendered images showing the final output on sample facade sections
-- `scripts/`: Grasshopper definition files (`.gh`)
-- `models/`: Rhino 3D base facade model and sample outputs (`.3dm`)
+- `Images/`: Rendered images showing the final output on sample facade sections
+- `Codes/`: Grasshopper definition files (`.gh`)
+- `Models/`: Rhino 3D base facade model and sample outputs (`.3dm`)
 
 ---
 
