@@ -1,0 +1,90 @@
+LayerName, Linetype
+0, Continuous
+=-M-DW-RISER NO, Continuous
+=-M-PLUMBING SIGN, Continuous
+=-M-VALVE, Continuous
+=-M-PLUMBING LEGEND TEXT, Continuous
+-M-SHT-TNOR-SI-, T3
+-M-SHT-TNOR-SR-, T4
+-M-SHT-TNOR-SO-, B1
+=-M-ISSO-VALVE, Continuous
+=-M--SHT-TEMIZNOT, Continuous
+-M-SHT-TNOR-CAP-, Continuous
+=-M--SHT-SO-YUK, Continuous
+=-M--SHT-SI-YUK, Continuous
+-M-SHT-SO-CAP-, Continuous
+-M-SHT-SI-CAP-, Continuous
+-M-SHT-SR-CAP-, Continuous
+=-M-DW VALVE CHAMBER, HIDDEN
+=-M-MECH EQUIPMENT, Continuous
+=-M-ISSO-EQUIP, Continuous
+flans015, Continuous
+M-HVAC-H-flans015, Continuous
+M-HVAC-H-pipe-05, Continuous
+M-HVAC-H-CIHAZ015, Continuous
+M-HVAC-H-VANA-KELEBEK02, Continuous
+M-HVAC-H-BORU-CELIK-05, Continuous
+M-HVAC-H-CEKVLF-02, Continuous
+M-HVAC-H-CEKVLF-015, Continuous
+M-HVAC-H-POMPA, Continuous
+M-HVAC-H-MECH EQUIPMENT, Continuous
+=-M-PLUMBING DCW, ACAD_ISO04W100
+VANA-KELEBEK02, Continuous
+KOMPANSATOR, Continuous
+=-M-PIPE HEATING SUPPLY, Continuous
+=-M-DUCT EQUIPMENT EF NO, Continuous
+pipe-05, Continuous
+BORU-CELIK-05, Continuous
+CEKVLF-02, Continuous
+POMPA, Continuous
+=-M-PIPE EQUIPMENT HEX, Continuous
+=-M-PIPE EQUIPMENT EXPANSION TANK, Continuous
+=-M-ISSO-CAP-DRENAJ, Continuous
+RO Cihazý, Continuous
+-M-SHT-CAP-, Continuous
+=-M-TEXT, Continuous
+M-TEFR, Continuous
+=-M-PLUMBING EQUIPMENT UVF, Continuous
+=-M-EQUIPMENT NO, Continuous
+=-M-PLUMBING-RO, B1
+=-M-STERIL-DCW, B1
+=-M-STERIL-DHW, T3
+=-M-STERIL-DHWR, T4
+=-M-P EQUIP  NO, Continuous
+=-M-PIS SU KOLONU, HAVALIK
+-M-SHT-SI-, ACAD_ISO05W100
+=-M-Distile SU Cihazý, Continuous
+=-M-LAB_DHW, T3
+-M-ISSO-FCU-SOD-, Continuous
+-M-ISSO-FCU-SO-, Continuous
+-M-ISSO-FCU-DREN-, Continuous
+-M-ISSO-FCU-IS-, Continuous
+-M-ISSO-FCU-ISD-, Continuous
+=-M-DW RISER, Continuous
+=-M-PIPE DW RISER, Continuous
+=-M-DW-RISER, Continuous
+-M-SHP-PS-2-DN RISER-, Continuous
+-M-SHP-PS-HAVALIK-1 DN RISER-, Continuous
+=- MEKANIK SAFT, Continuous
+=-M-M GAZ, Continuous
+SHAFT, Continuous
+=-M-P_RISER FCU DRAIN, Continuous
+-M-HVAC-E-WC-KNL2B-, Continuous
+M-ANNO TEXT, Continuous
+=-M-HV-KANAL-TEXT1, Continuous
+=-M-HV-KANAL-TEXT, Continuous
+=-M-HV-KANAL-TEXT-CM, Continuous
+=-M-HV-KANAL-TEXT2, Continuous
+-M-HVAC-E-WC-KNLTXT-, Continuous
+=-M-SHT-DOW-CEILING, Continuous
+SEH2, Continuous
+=-M-SANTRAL CÝHAZ AHU NO, Continuous
+=-M-SHT-TNOR-SR-ZONE2, T4
+=-M-SHT-TNOR-SO-ZONE2, B1
+=-M-SHT-TNOR-SI-ZONE2, T3
+=-M-SHT-TNOR-SI-LAUNDRY_KITCHEN, T3
+=-M-SHT-TNOR-SO-LAUNDRY, B1
+=-M-SHT-TNOR-SR-LAUNDRY_KITCHEN, T4
+=-M-SHT-TNOR-SO-KITCHEN, B1
+CP_Commens rev 1, Continuous
+=-M-PLUMBING HOSE BIB, Continuous
