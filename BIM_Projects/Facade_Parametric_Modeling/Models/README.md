@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/383d4d0b-ba4e-48c5-b9be-35d5ab26ddb9)## 📦 Rhino Model Download
+## 📦 Rhino Model Download
 
 Due to GitHub's file size restrictions, the full `.3dm` Rhino model used in this project is hosted externally.
 
