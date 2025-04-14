@@ -48,10 +48,30 @@ I revised the previously developed Grasshopper + CSV workflow to adapt it to thi
 📂 _Files related to this project are prefixed with `P2_`._
 
 ---
+## 📁 Included Files
 
-### 📌 Note
+- `Images/`: Rendered images and screenshots showing the final output.
+- `Codes/`: Grasshopper definition files (`.gh`), Python codes (`.py`)
 
-The core automation framework developed in these projects has since been adapted and reused in several other MEP-heavy projects, enabling rapid coordination and modeling while reducing manual workload and conflicts.
+---
+
+## 🛠️ Tools Used
+
+- Rhino 7
+- Grasshopper (Visual Programming)
+- Revit 2018
+- Dynamo
+- Visual Studio
+- Architectural facade design references
+
+
+---
+
+## 📌 Notes
+
+- Project name and building details are omitted due to confidentiality.
+- Visuals included are generic representations of the solution logic and algorithm behavior.
+- The core automation framework developed in these projects has since been adapted and reused in several other MEP-heavy projects, enabling rapid coordination and modeling while reducing manual workload and conflicts.
 
 ---
 
