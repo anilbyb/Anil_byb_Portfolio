@@ -10,6 +10,12 @@ This repository showcases selected professional and personal projects by Anıl B
 
 Each folder contains a focused project or group of related contributions. More technical details, images, and explanations can be found in the `README.md` files within each subfolder.
 
+> 📅 Note: This portfolio was assembled and uploaded recently as part of a focused application process. All included projects are based on prior experience and personal development work, curated for relevance and clarity.
+
+> 📅 Note: Due to confidentiality agreements, specific project names and internal documents are omitted for some of the projects. Visuals are representative of my contributions.
+
+
+
 ---
 
 👋 For questions, collaborations, or feedback, feel free to reach out via [LinkedIn](https://www.linkedin.com/in/anilbayburt) or email: anilbayburt@gmail.com
