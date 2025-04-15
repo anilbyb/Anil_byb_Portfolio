@@ -33,10 +33,10 @@ In Revit, I wrote **Python scripts** that:
 
 ---
 
-## 🏢 Project 2 – Twin Tower High-Rise MEP Coordination
+## 🏢 Project 2 – Hospistal Project
 
 **📌 Problem:**  
-The incoming AutoCAD layouts for a twin-tower high-rise project included multiple MEP systems: ventilation, greywater, freshwater, sprinkler, and electrical trays. Manual modeling and coordination in Revit would be extremely time-consuming and error-prone.
+The incoming AutoCAD layouts for a large haspital complex project included multiple MEP systems: ventilation, greywater, freshwater, sprinkler, and electrical trays, smoke, medical gases. Manual modeling and coordination in Revit would be extremely time-consuming and error-prone.
 
 **⚙️ Solution**  
 I revised the previously developed Grasshopper + CSV workflow to adapt it to this vertical building typology. The process:
