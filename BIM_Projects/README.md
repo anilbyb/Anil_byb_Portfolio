@@ -1,50 +1,60 @@
-# 🏗️ BIM Projects
+# BIM and Computational Modelling Projects
 
-This folder includes selected Building Information Modeling (BIM) projects I have worked on as a BIM Coordinator, Developer, and Architect.
+Selected workflows connecting drawing data, computational geometry and Revit modelling. This index describes the material currently present in the repository and provides direct entry points into each collection.
 
-Each project demonstrates a specific aspect of my BIM expertise — from automation with Python scripts and Dynamo, to interdisciplinary coordination, model auditing, and quantity extraction workflows.
+## 1. Architectural wall modelling from drawing data
 
----
+[Open the workflow](Automated_Architectural_RevitModeling/Model_Walls_From_DWG/)
 
-## 📂 Included Projects
+The project README describes a staged process: extract wall data in Rhino/Grasshopper, derive heights from structural references, create walls through the Revit API, and process wall/beam intersections with Dynamo.
 
-### 🏥 [Hospital Finishes & Coordination Model](./Hospital_Model)
-A large-scale healthcare facility BIM model developed for detailed architectural finishes and system coordination. Includes:
-- Finish materials and classification automation
-- Coordination with MEP disciplines
-- Clash detection and resolution using Navisworks
-- Quantity takeoff scripting in Python
+Included material:
 
----
+- [Rhino input model](Automated_Architectural_RevitModeling/Model_Walls_From_DWG/Step1-Walls-0100-R1.3dm)
+- Grasshopper definitions for [curve extraction](Automated_Architectural_RevitModeling/Model_Walls_From_DWG/Step1a-GH_Wall_GetData-1.gh), [type matching](Automated_Architectural_RevitModeling/Model_Walls_From_DWG/Step1b-GH_Wall-findtype.gh), [type organisation](Automated_Architectural_RevitModeling/Model_Walls_From_DWG/Step1c-GH_Wall-organizetypes.gh) and [height data](Automated_Architectural_RevitModeling/Model_Walls_From_DWG/Step2-GH_Wall-getheights.gh)
+- [Step1_WallData.xlsx](Automated_Architectural_RevitModeling/Model_Walls_From_DWG/Step1_WallData.xlsx) and [Step2_WallData.xlsx](Automated_Architectural_RevitModeling/Model_Walls_From_DWG/Step2_WallData.xlsx)
+- [Revit wall creation script](Automated_Architectural_RevitModeling/Model_Walls_From_DWG/Step3-RVT-PythonShell-ModelWalls.py)
+- [Dynamo wall/beam graph](Automated_Architectural_RevitModeling/Model_Walls_From_DWG/Step4-CutBeamsFromWalls.dyn) and [clash dataset](Automated_Architectural_RevitModeling/Model_Walls_From_DWG/Step4-Wall_Beam_Clashes.csv)
 
-### ⚓ [Oman Port BIM Coordination](./Oman_Port)
-Full-discipline coordination model for a large port construction project. Highlights:
-- Ground and underground systems integration
-- Custom Dynamo scripts for aligning topography with infrastructure models
-- Weekly issue tracking and visualization
+**Scope:** The Python script reads CSV rows and uses named wall types and levels to create Revit walls. Structural FBX references and a complete Revit model/template are not included. The spreadsheet names linked above are the actual filenames; the project README currently uses different step-number formatting.
 
----
+## 2. MEP modelling and coordination workflows
 
-### 🔧 [Revit Automation Tools](./Revit_Scripts)
-Reusable Python and Dynamo tools developed to enhance productivity in Revit. Contains:
-- Parameter batch updater
-- Sheet and view batch creator
-- Geometry simplification for export
+[Open the collection](Automated_MEP_Coordination/)
 
----
+The project README describes underground infrastructure and hospital workflows. The repository includes data-extraction definitions, CSV datasets and scripts for Revit element creation and positioning.
 
-## 🧠 Tools & Technologies Used
-- Autodesk Revit
-- Dynamo
-- Python for Revit (pyRevit, RevitPythonShell)
-- Navisworks Manage
-- BIM360 / ACC
-- Solibri Model Checker
-- Rhino + Grasshopper (for integration cases)
+Code entry points:
 
----
+- [Fire pipe creation](Automated_MEP_Coordination/Codes/01-CreateFirePipes-v2.py)
+- [Ventilation duct creation](Automated_MEP_Coordination/Codes/02-CreateVentDucts-v3.py)
+- [Domestic water pipe creation](Automated_MEP_Coordination/Codes/04-CreateDOWPipes.py)
+- [Pipe positioning relative to ceilings](Automated_MEP_Coordination/Codes/_PutAboveCeiling-Pipes.py)
+- [Grasshopper definitions and datasets](Automated_MEP_Coordination/Codes/)
+- [Project images](Automated_MEP_Coordination/Images/)
 
-### 👤 Author: Anıl Bayburtluoğlu  
-For more information, connect with me on LinkedIn(https://www.linkedin.com/in/anilbayburt) or email: anilbayburt@gmail.com
+**Scope:** The image filenames use `P1_` and `P2_`; the code filenames do not consistently identify those two projects. The project-to-code mapping remains to be documented. These files provide examples of modelling and positioning logic; they do not by themselves establish complete clash resolution, regulatory compliance or measured time savings.
 
+## 3. Parametric facade modelling
 
+[Open the collection](Facade_Parametric_Modeling/)
+
+The project README describes two workflows: detailing panels for a twisted tower facade, and generating facade data for a curved-floorplan Revit workflow.
+
+Included definitions:
+
+- [P1_PanelsModeler-v4.gh](Facade_Parametric_Modeling/Codes/P1_PanelsModeler-v4.gh)
+- [P2-create-EXCEL-data-T1.gh](Facade_Parametric_Modeling/Codes/P2-create-EXCEL-data-T1.gh)
+- [P2_Create_Face_Families.dyn](Facade_Parametric_Modeling/Codes/P2_Create_Face_Families.dyn)
+- [Images and workflow screenshots](Facade_Parametric_Modeling/Images/)
+- [External Rhino model reference](Facade_Parametric_Modeling/Models/README.md)
+
+**Scope:** The `Models` directory contains a README linking to external Rhino files, rather than the model files themselves. Availability and contents of that external folder have not been verified in this documentation review.
+
+## Using these examples
+
+These are project-specific workflow materials. Review their input formats, paths, Revit types and parameters, host environment and dependencies before adapting them. Some MEP scripts include deletion operations as part of rebuilding elements; inspect the relevant code and use a copy of a model when evaluating it.
+
+This documentation review checked repository paths and selected Python source; it did not run the workflows in Rhino, Grasshopper, Revit or Dynamo. Successful execution and output quality have not been verified by this review.
+
+[Back to the portfolio](../README.md) · [Website](https://anilis.me/) · [LinkedIn](https://www.linkedin.com/in/anilbayburt)
