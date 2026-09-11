@@ -33,7 +33,7 @@ Code entry points:
 - [Grasshopper definitions and datasets](Automated_MEP_Coordination/Codes/)
 - [Project images](Automated_MEP_Coordination/Images/)
 
-**Scope:** The image filenames use `P1_` and `P2_`; the code filenames do not consistently identify those two projects. The project-to-code mapping remains to be documented. These files provide examples of modelling and positioning logic; they do not by themselves establish complete clash resolution, regulatory compliance or measured time savings.
+**Scope:** The image filenames use `P1_` and `P2_`; the code filenames do not consistently identify those two projects. The listed Python scripts and Grasshopper definitions were developed for the hospital project and subsequently reused on other projects. These files provide examples of modelling and positioning logic; they do not by themselves establish complete clash resolution, regulatory compliance or measured time savings.
 
 ## 3. Parametric facade modelling
 
