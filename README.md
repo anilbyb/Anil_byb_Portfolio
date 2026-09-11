@@ -1,21 +1,29 @@
-# 🧰 Anıl Bayburtluoğlu – Portfolio Repository
+# Anıl Bayburtluoğlu | Design Technology Portfolio
 
-This repository showcases selected professional and personal projects by Anıl Bayburtluoğlu, covering three main domains:
+I am an architect working across BIM, computational modelling and software development. This repository brings together selected project-specific scripts, visual programming definitions and supporting material from my technical work.
 
-- **🏗️ BIM & Architecture**: Involvement in large-scale international construction projects, including automation scripts, coordination workflows, quantity extraction, and parametric modeling using tools like Revit, Dynamo, Python, and Navisworks.
-  
-- **🎮 Game Development**: Prototypes and gameplay systems built in Unreal Engine 5, including VR interactions, drone simulations, puzzle mechanics, and narrative-driven experiences.
-  
-- **🛠️ Side Projects & Experiments**: Explorations in AI, generative design, 3D modeling, creative coding, and simulation logic — driven by curiosity and a passion for problem-solving.
+The current collection focuses on translating drawing and geometry data into BIM elements, automating modelling tasks, and developing parametric facade workflows with Rhino, Grasshopper, Python, Revit and Dynamo.
 
-Each folder contains a focused project or group of related contributions. More technical details, images, and explanations can be found in the `README.md` files within each subfolder.
+## Explore the work
 
-> 📅 Note: This portfolio was assembled and uploaded recently as part of a focused application process. All included projects are based on prior experience and personal development work, curated for relevance and clarity.
+| Collection | Focus | Material currently included |
+| --- | --- | --- |
+| [Architectural wall modelling](BIM_Projects/Automated_Architectural_RevitModeling/Model_Walls_From_DWG/) | A staged workflow from drawing-derived wall data to Revit modelling | Rhino model, Grasshopper definitions, Excel data, a Revit Python script, a Dynamo graph and wall/beam clash data |
+| [MEP modelling and coordination workflows](BIM_Projects/Automated_MEP_Coordination/) | Data extraction, Revit element creation and project-specific positioning logic | Grasshopper definitions, Python and AutoLISP scripts, CSV datasets and images |
+| [Parametric facade modelling](BIM_Projects/Facade_Parametric_Modeling/) | Panel detailing and data-driven facade modelling | Grasshopper definitions, a Dynamo graph, images and a reference to externally hosted Rhino models |
 
-> 📅 Note: Due to confidentiality agreements, specific project names and internal documents are omitted for some of the projects. Visuals are representative of my contributions.
+See the [BIM project index](BIM_Projects/README.md) for file-level entry points and scope notes.
 
+## Repository scope
 
+This is a curated collection of work developed outside this repository. Its Git history records portfolio assembly and subsequent maintenance, rather than the original development timeline or a history of team-based software delivery.
 
----
+The files are project-specific examples, with dependencies such as model templates, element types, custom parameters, input data and local file paths. They are not packaged as a single application. Inclusion here does not establish compatibility with a particular software version or independently verified performance, coordination or compliance results.
 
-👋 For questions, collaborations, or feedback, feel free to reach out via [LinkedIn](https://www.linkedin.com/in/anilbayburt) or email: anilbayburt@gmail.com
+The [Games_Softwares](Games_Softwares/) directory currently contains placeholder README files only; no game source, playable build or maintenance-software demo is included. My broader game, VR and application work is presented separately on my [website](https://anilis.me/apps-and-games).
+
+## About and contact
+
+- [Personal website](https://anilis.me/)
+- [LinkedIn](https://www.linkedin.com/in/anilbayburt)
+- Email: anilbayburt@gmail.com
