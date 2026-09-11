@@ -1,98 +1,41 @@
-# 🧱 Automated Facade Production Modeling
+# Parametric Facade Modelling
 
-This project focuses on the creation of detailed production models for facade elements of a complex architectural structure.
+## Purpose
 
----
+Two project workflows explore facade geometry, panel detailing and Revit family placement. The original project descriptions identify a twisted tower facade and a curved-floorplan facade. The supplied code filenames distinguish these as `P1_` and `P2_`.
 
-## 🧩 Main Challenge
+## Project 1: twisted tower panel detailing
 
-The architectural designs featured **non-repetitive, angular or curved facade geometry**, which made manual modeling of individual profiles and connections inefficient and error-prone.
+The documented aim is to generate profiles, substructure and connection geometry for facade panels with varying geometry.
 
-# 🧱 Parametric Facade Projects
+- **Input:** Base facade surfaces in Rhino; externally referenced model filenames are listed in [Models](Models/README.md).
+- **Definition:** [P1_PanelsModeler-v4.gh](Codes/P1_PanelsModeler-v4.gh).
+- **Intended output:** Rhino geometry for panel detailing.
+- **Supporting material:** [Images](Images/) contains `P1_` images and a Grasshopper screenshot.
 
-This folder contains two distinct facade modeling and automation projects developed using Rhino, Grasshopper, Revit, and Dynamo. Both projects were designed to solve geometry-related challenges arising from complex architectural designs and to support precise production or BIM delivery workflows.
+The definition has not been executed or fully inspected internally in this review. Fabrication readiness and geometric tolerances have not been independently verified.
 
-Each project’s files are prefixed accordingly:
-- `P1_`: Project 1 – Twisted Tower Panel Detailing
-- `P2_`: Project 2 – Curved Floorplan Facade Parametrization
+## Project 2: curved-floorplan facade modelling
 
----
+The original description associates this workflow with spline-based facade geometry and Revit delivery. Two implementation files are included:
 
-## 🏢 Project 1 – Twisted Tower Facade Panel Detailing
+| File | Evidence and intended role |
+| --- | --- |
+| [P2-create-EXCEL-data-T1.gh](Codes/P2-create-EXCEL-data-T1.gh) | Grasshopper definition identified by its filename as a data-preparation step. Its exact export schema and handoff to Revit remain undocumented. |
+| [P2_Create_Face_Families.dyn](Codes/P2_Create_Face_Families.dyn) | The saved graph uses selected Revit element geometry, surface/curve processing, family types, `FamilyInstance.ByPoint`, parameter updates and rotation. Intended output is configured Revit family instances. |
 
-**📌 Problem:**  
-A major bank’s headquarters, composed of two high-rise towers, features a twisted box architectural form. As a result, the facade includes triangular panels with varying angles and sizes. In order to connect these panels properly to both the building and to each other, high-precision connection details had to be modeled based on the chosen fabrication method.
+The Dynamo graph sets parameters including `Start_X`, `Start_Y`, `End_X`, `End_Y`, `h1`, `h2`, `Sweep Radius` and `Width`. Required families and the complete Revit model are not included.
 
-**⚙️ Solution**  
-To address this, I developed a **Grasshopper definition** that automates the generation of:
-- 3D facade profiles  
-- Substructure geometries  
-- Connection details  
+The reviewed graph does not contain the CSV import step described in the earlier README. It uses point-based family instance nodes; an adaptive-component placement workflow is not established by this file. The relationship between the Grasshopper export and selected Revit geometry needs clarification.
 
-The algorithm works by **selecting a surface** from the base facade model. It then:
-1. Analyzes surface orientation and curvature  
-2. Aligns profile elements accordingly  
-3. Creates parametric extrusion and connection logic  
-4. Outputs geometry suitable for production and detailing in Rhino  
+## Environment and limitations
 
-📂 _Files related to this project are prefixed with `P1_`._
+- Rhino/Grasshopper are required for the `.gh` definitions.
+- The Dynamo graph requires a Revit context and project-specific family types and geometry.
+- The graph records Dynamo **2.13.1.3887**. This is saved metadata, not confirmation of a working Revit/Dynamo version combination.
+- The [Models directory](Models/README.md) contains an external download reference, not local `.3dm` files. External availability has not been checked.
+- No definition or graph was run in Rhino, Grasshopper, Revit or Dynamo during this review. Output quality, dependencies and compatibility remain unverified.
 
----
+Project and client names are omitted here, as in the original documentation.
 
-## 🏦 Project 2 – Curved Floorplan Facade Parametrization
-
-**📌 Problem:**  
-The architectural design of another bank’s 10-story headquarters featured uniquely curved floor plans drawn using AutoCAD’s spline tool. The facade elements needed to be delivered as a detailed Revit model.
-
-**⚙️ Solution**  
-To address this, I developed a **multi-tool workflow** using Grasshopper, CSV, and Dynamo, which automates the generation of:
-- Parametric facade panel types  
-- Sliced spline-derived surfaces  
-- Adaptive component placement in Revit  
-
-The algorithm:
-1. Reads spline curves from AutoCAD  
-2. Slices them based on geometric rules  
-3. Exports curvature parameters and panel types into a `.csv` file  
-4. Dynamo then reads this file in Revit  
-5. Uses the data to place and configure adaptive families with correct curvature and orientation  
-
-📂 _Files related to this project are prefixed with `P2_`._
-
----
-
-📌 *Project names and client details are omitted due to confidentiality agreements. Visuals and scripts represent the underlying logic and technical contribution.*
-
-
----
-
-## 📁 Included Files
-
-- `Images/`: Rendered images showing the final output on sample facade sections
-- `Codes/`: Grasshopper definition files (`.gh`)
-- `Models/`: Rhino 3D base facade model and sample outputs (`.3dm`)
-
----
-
-## 🛠️ Tools Used
-
-- Rhino 7
-- Grasshopper (Visual Programming)
-- Revit 2018
-- Dynamo
-- Architectural facade design references
-
----
-
-## 📌 Notes
-
-- Project name and building details are omitted due to confidentiality.
-- Visuals included are generic representations of the solution logic and algorithm behavior.
-
----
-
-## 👤 Author: Anıl Bayburtluoğlu  
-For the full portfolio, visit the [main repository](../../README.md)  
-Contact: [LinkedIn](https://www.linkedin.com/in/anilbaybur)
-
-
+[Back to BIM projects](../README.md) · [Main portfolio](../../README.md) · [LinkedIn](https://www.linkedin.com/in/anilbayburt)
