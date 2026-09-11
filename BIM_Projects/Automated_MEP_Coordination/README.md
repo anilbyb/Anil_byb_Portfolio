@@ -1,80 +1,40 @@
-# 🔧 Automated MEP Coordination
+# MEP Modelling and Coordination Workflows
 
-This folder contains two projects focused on automating the coordination and modeling of MEP (Mechanical, Electrical, and Plumbing) systems using **Grasshopper**, **Rhino**, **Python**, and **Revit**. Both workflows begin with 2D AutoCAD layouts and transform them into fully-coordinated, rule-compliant 3D MEP models, significantly reducing manual modeling time and clash risk.
+## Purpose and project context
 
-Each project includes:
-- Grasshopper definitions for extracting and coordinating MEP elements
-- CSV outputs for systemized element data
-- Python scripts for creating MEP elements directly in Revit
+This collection documents drawing-data extraction and project-specific Revit modelling and positioning logic.
 
-📂 _Project-related files are prefixed with `P1_` and `P2_` accordingly._
+The original project documentation describes two contexts:
 
----
+- **Project 1: underground MEP coordination for a port development**, using drawing-derived system information and spatial constraints.
+- **Project 2: hospital MEP modelling**, adapting drawing-data preparation and Revit automation to building services.
 
-## ⚓ Project 1 – Large Port Area Underground MEP Coordination
+Images use `P1_` and `P2_` prefixes. Code files use system and task names instead. A definitive project-to-code mapping has not yet been documented, so the files below are organised by function.
 
-**📌 Problem:**  
-A massive 1,500,000 m² port area infrastructure project involving **11 MEP disciplines** and **17 buildings** required all underground MEP systems to fit within a constrained **7-meter vertical corridor**, due to challenging soil and elevation conditions.
+## Technical examples
 
-**⚙️ Solution**  
-To address this, I developed a **Grasshopper definition** that:
-- Reads MEP layouts from AutoCAD (locations, systems, diameters, materials)
-- Defines spatial constraints using 3D volumes
-- Automatically repositions elements (pipes, ducts, trays) to avoid clashes
-- Places manholes and transitions per discipline-specific rules
-- Outputs structured CSVs for each system
+| File | Inputs visible in source | Intended output / current state |
+| --- | --- | --- |
+| [01-CreateFirePipes-v2.py](Codes/01-CreateFirePipes-v2.py) | `L05-Curves.csv`, `L05-Tags.csv`, `L05-risers.csv`; existing sprinklers; named Revit systems/types and custom parameters | Fire pipe creation and positioning routines. The execution section also invokes deletion and cleanup operations. The three named CSV inputs are not present in this repository. |
+| [02-CreateVentDucts-v3.py](Codes/02-CreateVentDucts-v3.py) | CSV files including `CUR-RECTS.csv`, `CUR-ROUNDS.csv` and `CUR-DOWNRECTS.csv`; model types, parameters and ceiling references | Contains duct creation, fitting, insulation and height routines. **In the committed execution section, creation and adjustment calls are commented out while a deletion call is active. It is not an end-to-end duct creation run as saved.** |
+| [04-CreateDOWPipes.py](Codes/04-CreateDOWPipes.py) | `L06-DOWCurves.csv`; selected level/zone configuration; pipe types, system names, custom parameters and linked ceilings | Domestic water pipe creation, insulation and elevation updates. The execution section first deletes existing pipes/fittings selected by its level logic. |
+| [_PutAboveCeiling-Pipes.py](Codes/_PutAboveCeiling-Pipes.py) | Selected model elements, linked ceilings and custom height parameters | Adjusts selected pipe elevations using ceiling-related information; requires appropriate pipe selection and model setup. |
 
-In Revit, I wrote **Python scripts** that:
-1. Read the CSV files
-2. Create the MEP elements with accurate placement
-3. Assign correct system and material data
+See [Codes](Codes/README.md) for data and definition entry points, and [Images](Images/) for the supplied visual material.
 
-📂 _Files related to this project are prefixed with `P1_`._
+## Environment
 
----
+- Rhino and Grasshopper for the supplied `.gh` definitions.
+- AutoCAD for the supplied AutoLISP helper.
+- Revit with a Python host exposing `__revit__` for the Python scripts.
+- Project-specific Revit element types, system names, parameters and linked models.
 
-## 🏢 Project 2 – Hospistal Project
+Exact working software versions and Python-host configuration are not established by the reviewed source. Earlier version labels are not presented here as verified requirements.
 
-**📌 Problem:**  
-The incoming AutoCAD layouts for a large haspital complex project included multiple MEP systems: ventilation, greywater, freshwater, sprinkler, and electrical trays, smoke, medical gases. Manual modeling and coordination in Revit would be extremely time-consuming and error-prone.
+## Known limitations
 
-**⚙️ Solution**  
-I revised the previously developed Grasshopper + CSV workflow to adapt it to this vertical building typology. The process:
-- Extracted required parameters from AutoCAD layouts
-- Calculated optimal routing and offsets within tight shaft spaces
-- Obeyed coordination rules per system (e.g., minimum spacing, duct heights)
-- Generated CSVs used by a Python script in Revit to model all MEP systems accurately
+The source includes hard-coded paths, level/zone choices and parameter names. Some routines operate on model-wide collections or level-based selections; their scope must be inspected before use. Several scripts also rely on API names or host-provided imports that are not fully self-contained.
 
-📂 _Files related to this project are prefixed with `P2_`._
+The repository does not establish a complete automatic routing solver, full clash resolution or regulatory compliance. No measured time savings or success rates are asserted. The supplied scripts and definitions were not run in their host applications during this review; evaluate them only after reviewing dependencies and execution sections, using a copy of the model.
 
----
-## 📁 Included Files
-
-- `Images/`: Rendered images and screenshots showing the final output.
-- `Codes/`: Grasshopper definition files (`.gh`), Python codes (`.py`)
-
----
-
-## 🛠️ Tools Used
-
-- Rhino 7
-- Grasshopper (Visual Programming)
-- Revit 2018
-- Dynamo
-- Visual Studio
-- Architectural facade design references
-
-
----
-
-## 📌 Notes
-
-- Project name and building details are omitted due to confidentiality.
-- Visuals included are generic representations of the solution logic and algorithm behavior.
-- The core automation framework developed in these projects has since been adapted and reused in several other MEP-heavy projects, enabling rapid coordination and modeling while reducing manual workload and conflicts.
-
----
-
-👤 Author: Anıl Bayburtluoğlu  
-Visit the [main portfolio](../../README.md) for more projects or reach out via [LinkedIn](https://www.linkedin.com/in/anilbayburt) or mail: anilbayburt@gmail.com
-
+[Back to BIM projects](../README.md) · [Main portfolio](../../README.md) · [LinkedIn](https://www.linkedin.com/in/anilbayburt)
