@@ -9,7 +9,7 @@ The original project documentation describes two contexts:
 - **Project 1: underground MEP coordination for a port development**, using drawing-derived system information and spatial constraints.
 - **Project 2: hospital MEP modelling**, adapting drawing-data preparation and Revit automation to building services.
 
-Images use `P1_` and `P2_` prefixes. Code files use system and task names instead. A definitive project-to-code mapping has not yet been documented, so the files below are organised by function.
+Images use `P1_` and `P2_` prefixes. Code files use system and task names instead. The Python scripts listed below and the `get_DOW_data.gh`, `get_WWS_data.gh` and `07-ven/get_VentDuct_data_v03-LB1.gh` definitions were developed for the hospital project and subsequently reused on other projects. They are organised below by function.
 
 ## Technical examples
 
