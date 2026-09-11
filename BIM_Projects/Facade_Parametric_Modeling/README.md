@@ -17,16 +17,16 @@ The definition has not been executed or fully inspected internally in this revie
 
 ## Project 2: curved-floorplan facade modelling
 
-The original description associates this workflow with spline-based facade geometry and Revit delivery. Two implementation files are included:
+This workflow used spline-based facade geometry and Excel parameter data to place and configure pre-built Revit families. The families already contained the required parameters. Two implementation files are included:
 
 | File | Evidence and intended role |
 | --- | --- |
-| [P2-create-EXCEL-data-T1.gh](Codes/P2-create-EXCEL-data-T1.gh) | Grasshopper definition identified by its filename as a data-preparation step. Its exact export schema and handoff to Revit remain undocumented. |
+| [P2-create-EXCEL-data-T1.gh](Codes/P2-create-EXCEL-data-T1.gh) | Grasshopper definition identified by its filename as a data-preparation step. The exact export schema and complete handoff to Revit are not included. |
 | [P2_Create_Face_Families.dyn](Codes/P2_Create_Face_Families.dyn) | The saved graph uses selected Revit element geometry, surface/curve processing, family types, `FamilyInstance.ByPoint`, parameter updates and rotation. Intended output is configured Revit family instances. |
 
 The Dynamo graph sets parameters including `Start_X`, `Start_Y`, `End_X`, `End_Y`, `h1`, `h2`, `Sweep Radius` and `Width`. Required families and the complete Revit model are not included.
 
-The reviewed graph does not contain the CSV import step described in the earlier README. It uses point-based family instance nodes; an adaptive-component placement workflow is not established by this file. The relationship between the Grasshopper export and selected Revit geometry needs clarification.
+The overall workflow read the required family parameter values from Excel. The included Dynamo graph documents a geometry-based placement/configuration stage using selected Revit elements and point-based family instance nodes. It does not contain an Excel import node; the spreadsheet-reading stage and its connection to this saved graph are not included in the repository.
 
 ## Environment and limitations
 
