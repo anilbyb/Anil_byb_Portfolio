@@ -16,7 +16,7 @@ Included material:
 - [Revit wall creation script](Automated_Architectural_RevitModeling/Model_Walls_From_DWG/Step3-RVT-PythonShell-ModelWalls.py)
 - [Dynamo wall/beam graph](Automated_Architectural_RevitModeling/Model_Walls_From_DWG/Step4-CutBeamsFromWalls.dyn) and [clash dataset](Automated_Architectural_RevitModeling/Model_Walls_From_DWG/Step4-Wall_Beam_Clashes.csv)
 
-**Scope:** The Python script reads CSV rows and uses named wall types and levels to create Revit walls. Structural FBX references and a complete Revit model/template are not included. The spreadsheet names linked above are the actual filenames; the project README currently uses different step-number formatting.
+**Scope:** The Python script reads CSV rows and uses named wall types and levels to create Revit walls. Structural FBX references and a complete Revit model/template are not included.
 
 ## 2. MEP modelling and coordination workflows
 
@@ -55,6 +55,6 @@ Included definitions:
 
 These are project-specific workflow materials. Review their input formats, paths, Revit types and parameters, host environment and dependencies before adapting them. Some MEP scripts include deletion operations as part of rebuilding elements; inspect the relevant code and use a copy of a model when evaluating it.
 
-This documentation review checked repository paths and selected Python source; it did not run the workflows in Rhino, Grasshopper, Revit or Dynamo. Successful execution and output quality have not been verified by this review.
+This documentation review checked repository paths, Python source and saved Dynamo graph data; it did not run the workflows in Rhino, Grasshopper, Revit or Dynamo. Successful execution and output quality have not been verified by this review.
 
 [Back to the portfolio](../README.md) · [Website](https://anilis.me/) · [LinkedIn](https://www.linkedin.com/in/anilbayburt)
