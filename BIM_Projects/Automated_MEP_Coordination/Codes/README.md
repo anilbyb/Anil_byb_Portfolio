@@ -13,6 +13,6 @@ See the [project README](../README.md) for Python inputs, execution state and li
 
 The top-level `get_DOW_data.gh` and `02-DOW/get_DOW_data.gh` have identical Git blob hashes in the reviewed revision; both are preserved.
 
-Directory names identify the supplied groupings. They do not establish which files belong to the port or hospital project. CSV presence does not guarantee that every script's hard-coded input path, schema or required model context is satisfied. Grasshopper definitions have not been executed in this review.
+The four Python scripts documented in the project README, together with `get_DOW_data.gh`, `get_WWS_data.gh` and `07-ven/get_VentDuct_data_v03-LB1.gh`, were developed for the hospital project and subsequently reused on other projects. Directory names identify system groupings rather than separate projects. CSV presence does not guarantee that every script's hard-coded input path, schema or required model context is satisfied. Grasshopper definitions have not been executed in this review.
 
 [Back to the project](../README.md)
