@@ -1,6 +1,6 @@
 # Facility Management Software Demo
 
-![Facility Management preview](media/facility_management.jpg)
+![Facility Management preview](media/sFM-01.PNG)
 
 This is a facility-management software demo prepared for a company. The workflow combined a Revit add-in for data export with a Unity application for model viewing, asset information and maintenance-related task handling.
 
@@ -29,6 +29,11 @@ This is a facility-management software demo prepared for a company. The workflow
 
 See the [demo notes](DEMO/README.md) for the repository-level demo context.
 
+![Screenshot](media/sFM-02.PNG)
+![Screenshot](media/sFM-03.PNG)
+![Screenshot](media/sFM-04.PNG)
+![Screenshot](media/sFM-05.PNG)
+![Screenshot](media/sFM-06.PNG)
 ## Notes
 
 The full Revit add-in, Unity project source, exported client model data and build files are not included in this repository.
