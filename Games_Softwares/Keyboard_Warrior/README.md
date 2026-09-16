@@ -1,6 +1,6 @@
 # Keyboard Warrior
 
-![Keyboard Warrior preview](media/keyboard_warrior.jpg)
+![Keyboard Warrior preview](media/KW01.png)
 
 Keyboard Warrior is my first published game. It was released on Steam on 31 March 2023 and was also a personal production test: designing, developing and publishing a complete game in approximately three months.
 
@@ -20,6 +20,11 @@ The player protects a city from AI drones by controlling a turret through a came
 - **Status:** Published game
 - **Primary mechanic:** Typing-driven targeting and shooting
 - **Repository contents:** Documentation, one lightweight thumbnail and external media links only
+
+![Screenshot](media/KW02.png)
+![Screenshot](media/KW03.png)
+![Screenshot](media/KW04.png)
+![Screenshot](media/KW05.png)
 
 ## Notes
 
