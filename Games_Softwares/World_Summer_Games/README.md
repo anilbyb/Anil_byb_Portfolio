@@ -9,13 +9,14 @@ Archery and trap shooting are playable in the current showcased build.
 ## Media
 
 - [Gameplay video on Google Drive](https://drive.google.com/file/d/1GWu0ciN8cG9hIKJAoNROwaAcTcCnCIXd/view?usp=drivesdk)
+- [Screenshot gallery on Google Drive](https://drive.google.com/drive/folders/157E0qxsBUpxvuFYl-neeqJrwOqiyQsMA)
 
 ## Technical Scope
 
 - **Engine:** Unreal Engine
 - **Current status:** Alpha test project
 - **Playable disciplines shown:** Archery and trap shooting
-- **Repository contents:** Documentation and lightweight preview media only
+- **Repository contents:** Documentation, one lightweight thumbnail and external media links only
 
 ## Notes
 

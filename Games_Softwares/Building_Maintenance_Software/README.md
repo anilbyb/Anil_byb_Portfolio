@@ -1,5 +1,7 @@
 # Facility Management Software Demo
 
+![Facility Management preview](media/facility_management.jpg)
+
 This is a facility-management software demo prepared for a company. The workflow combined a Revit add-in for data export with a Unity application for model viewing, asset information and maintenance-related task handling.
 
 ## Workflow
@@ -12,12 +14,16 @@ This is a facility-management software demo prepared for a company. The workflow
 6. Users could select elements from 3D, 2D or list views and inspect information such as type, brand, point of contact, room and building.
 7. Users could create tasks linked to selected elements, including responsibility, location and the element to be maintained or replaced.
 
+## Media
+
+- [Screenshot gallery on Google Drive](https://drive.google.com/drive/folders/1R6zeXiDgOi08jd-zy3EaN8Bd0kx70m70)
+
 ## Technical Scope
 
 - **Source platform:** Revit add-in for export
 - **Viewer platform:** Unity
 - **Data flow:** FBX geometry plus CSV parameter data
-- **Repository contents:** Documentation and demo notes only
+- **Repository contents:** Documentation, one lightweight thumbnail and demo notes only
 
 ## Demo Folder
 
