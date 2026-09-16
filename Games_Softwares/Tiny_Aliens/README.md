@@ -1,6 +1,6 @@
 # Tiny Aliens
 
-![Tiny Aliens preview](media/tiny_aliens.jpg)
+![Tiny Aliens preview](media/sTA_01.png)
 
 Tiny Aliens is an Unreal Engine prototype in which the player is a tiny alien visitor exploring Earth from a very small scale. The character is roughly 1 mm tall and uses a small flying spacecraft to move through abandoned places, workplaces and historical ruins.
 
@@ -18,6 +18,13 @@ The prototype explores scale, environmental navigation and object interaction. I
 - **Interaction focus:** Small-scale flying exploration and object interaction
 - **VR:** Adapted for VR use
 - **Repository contents:** Documentation, one lightweight thumbnail and external media links only
+
+![Screenshot](media/sTA_02.png)
+![Screenshot](media/sTA_03.png)
+![Screenshot](media/sTA_04.png)
+![Screenshot](media/sTA_05.png)
+![Screenshot](media/sTA_06.png)
+
 
 ## Notes
 
